@@ -59,6 +59,7 @@ color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .homepage-right {
@@ -138,3 +139,104 @@ color: inherit;
     border-radius: 15px;
 }
 
+@media only screen and (max-width: 855px) {
+    .background-image {
+        position: fixed;
+        height: 100vh;
+    }
+
+    /* Homepage Frontscreen */
+    .homepage-frontscreen {
+        flex-direction: column;
+        height: unset;
+    }
+    .homepage-left {
+        width: 100vw;
+        height: calc(100vh * (2/5));
+    }
+    .homepage-right {
+        width: 100vw;
+        height: unset;
+        padding: 50px 15px;
+    }
+    .homepage-right > * {
+        max-width: 90%;
+        margin-left: unset;
+    }
+    .homepage-right > h2 {
+        font-size: 1.25rem;
+    }
+    
+    .homepage-right > p {
+        font-size: 1.15rem;
+    }
+    .homepage-right > a {
+        margin: unset;
+    }
+
+    /* Homepage Infoscreen */
+    .homepage-info > div {
+        width: 90%;
+        text-align: left;
+    }
+    .homepage-info-images-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: unset;
+    }
+    .homepage-info-images-text > img {
+        height: unset;
+        max-width: 100%;
+        padding: 25px 0;
+    }
+    .homepage-info-images {
+        flex-direction: column;
+    }
+    
+}
+
+/*
+
+.homepage-info {
+    background-color: #F1F1F1;
+    padding: 15px 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.homepage-info > div {
+    width: 50%;
+    text-align: justify;
+}
+
+.homepage-info-images-text {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.homepage-info-images-text > img {
+    height: 200px;
+}
+
+
+.homepage-info-images { 
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.homepage-info-images > img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+}
+*/
