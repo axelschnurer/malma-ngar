@@ -8,3 +8,91 @@ body, html {
     margin: 0;
     overflow-x: hidden;
 }
+
+/* Link behavior */
+a:link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:visited {
+color: inherit;
+}
+
+
+a:hover {
+color: inherit;
+}
+
+a:active {
+color: inherit;
+}
+
+/* Stretched image with title at top of page */
+
+.image-title {
+    margin-top: 100px;
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cover {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 250px;
+    background-color: rgba(241, 241, 241, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Body of member page */
+
+.bli-medlem-info {
+    width: 100vw;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.important {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 1.25rem
+}
+
+.bli-medlem-info > * {
+    width: 90%;
+}
+
+@media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) {
+    .image-title {
+        height: 200px;
+        margin-top: 0px;
+    }
+    .cover {
+        height: 200px;
+        top: 0;
+        font-size: 1.75rem;
+    }
+
+    .bli-medlem-info > * {
+        width: 75%;
+    }
+    .important {
+        font-size: 1.25rem;
+    }
+}

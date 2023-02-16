@@ -10,6 +10,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+/* pages Navbar */
+
+.navbar-pages {
+    color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0 0 10px gray;
+    background-color: white;
+    z-index: 3;
+}
+
+.navbar-pages-home {
+    width: calc((100vw * (2/5)) - (100vw - 100%));
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+}
+
+.navbar-pages-links {
+    position: unset;
+    color: unset;
 }
 
 /* Dropwdown Stuff */
@@ -24,7 +52,6 @@
     height: 100%;
     cursor: pointer;
     font-size: 1.25rem;
-    color: white;
     background-color: transparent;
     border: none;
     text-align: center;
@@ -67,8 +94,11 @@
     color: black;
 }
 
-@media only screen and (max-width: 855px) { 
+@media only screen and (max-width: 855px), (pointer:none), (pointer:coarse)  { 
     .navbar {
         display: none;
     }   
+    .navbar-pages {
+        display: none;
+    }
 }
