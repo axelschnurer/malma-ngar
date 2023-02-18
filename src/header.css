@@ -26,6 +26,7 @@
     box-shadow: 0 0 10px gray;
     background-color: white;
     z-index: 3;
+    font-weight: bold;
 }
 
 .navbar-pages-home {

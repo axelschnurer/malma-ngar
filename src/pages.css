@@ -52,13 +52,17 @@ color: inherit;
     box-shadow: 0 0 10px gray;
 }
 
+.cover > h1 {
+    display: none;
+}
+
 /* Body of member page */
 
 .bli-medlem-info {
     width: 60vw;
-    padding: 100px 0;
+    padding: 80px 0;
     position: absolute;
-    top: calc((100px + 250px) - (36px + 50px + 32px));
+    top: calc((100px + 250px) - (42px + 40px)); /* Height of header + height of image - textheight/2 + padding/2 */
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -66,18 +70,19 @@ color: inherit;
     align-items: center;
     text-align: left;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 0 10px gray;
 }
 
 .bli-medlem-info > h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-top: 0;
     text-align: center;
 }
 
 .important {
     font-size: 2rem;
+    margin-top: 10px;
 }
 
 .bold {
@@ -91,6 +96,7 @@ color: inherit;
 }
 
 @media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) {
+    /* Stretched image with title at top of page */
     .image-title {
         height: 200px;
         margin-top: 0px;
@@ -100,7 +106,11 @@ color: inherit;
         top: 0;
         font-size: 1.75rem;
     }
+    .cover > h1 {
+        display: unset;
+    }
 
+    /* Body of member page */
     .bli-medlem-info {
         top: 200px;
         box-shadow: unset;
@@ -111,7 +121,7 @@ color: inherit;
     }
 
     .bli-medlem-info > h1 {
-        text-align: left;
+        display: none;
     }
 
     .bold {
@@ -120,7 +130,7 @@ color: inherit;
     }
 
     .bli-medlem-info > * {
-        width: 90%;
+        width: 95%;
     }
  
     .important {

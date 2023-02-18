@@ -136,7 +136,7 @@ color: inherit;
     max-width: 100%;
     object-fit: cover;
     height: 200px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) {
