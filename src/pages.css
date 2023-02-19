@@ -56,7 +56,7 @@ color: inherit;
     display: none;
 }
 
-/* Body of member page */
+/* Body of member page and contact page */
 
 .bli-medlem-info {
     width: 60vw;
@@ -95,6 +95,11 @@ color: inherit;
     width: 90%;
 }
 
+.contact-information {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) {
     /* Stretched image with title at top of page */
     .image-title {
@@ -110,7 +115,7 @@ color: inherit;
         display: unset;
     }
 
-    /* Body of member page */
+    /* Body of member page and contact page */
     .bli-medlem-info {
         top: 200px;
         box-shadow: unset;
@@ -135,5 +140,75 @@ color: inherit;
  
     .important {
         font-size: 1.10rem;
+    }
+
+    .contact-information {
+        font-size: 1rem;
+    }
+}
+
+/* Layout for About, Goals and stadgar */
+
+.flex-layout-row {
+    width: 100vw;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-layout-row > * {
+    width: 60%;
+    padding: 0 50px;
+}
+
+.flex-layout-row h1 {
+    font-size: 3.25rem;
+}
+
+.flex-layout-row p {
+    font-size: 1.25rem;
+}
+
+#image-right {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, calc(-50% - 100px + (125px + 0.67em))); /* Move Image Down 50% of viewport height, move it up by 50% of its own height, move it up by the header height, move it down by the text margin top */ 
+    right: 25px;
+    border-radius: 15px;
+    width: 25vw;
+    height: 75vh;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) { 
+    .flex-layout-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;    
+        margin-top: unset;
+    }
+    .flex-layout-row > * {
+        max-width: 90%;
+        padding: unset
+    }
+    .flex-layout-row p {
+        max-height: unset;
+        width: unset;
+        font-size: 1rem;
+    }
+    .flex-layout-row h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    #image-right {
+        position: relative;
+        top: unset;
+        right: unset;
+        transform: unset;
+        height: unset;
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
