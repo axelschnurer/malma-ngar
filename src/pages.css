@@ -149,7 +149,7 @@ color: inherit;
 
 /* Layout for About, Goals and stadgar */
 
-.flex-layout-row {
+.flex-layout-row { /* Update name */
     width: 100vw;
     margin-top: 125px;
     display: flex;
@@ -211,4 +211,44 @@ color: inherit;
         left: 50%;
         transform: translate(-50%, 0);
     }
+}
+
+/* Layout for styrelse page */
+
+#styrelse-page-title {
+    margin-top: 150px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.styrelse-flexbox-wrapper {
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.styrelse-flexbox-wrapper > div {
+    width: 250px; 
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+.styrelse-flexbox-wrapper > div > img {
+    width: 100%;
+    height: 75%;
+    object-fit: fill;
+    border-radius: 15px 15px 0 0;
+}
+
+.styrelse-flexbox-wrapper > div > h3 {
+    margin: 0;
 }
