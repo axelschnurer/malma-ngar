@@ -185,7 +185,7 @@ color: inherit;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;    
-        margin-top: unset;
+        margin-top: 75px;
     }
     .flex-layout-row > * {
         max-width: 90%;
@@ -255,11 +255,11 @@ color: inherit;
 
 @media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) { 
     #styrelse-page-title {
-        margin-top: 0.67em;
+        margin-top: 75px;
     }
     .styrelse-flexbox-wrapper {
         width: 100vw;
-        padding: unset;
+        padding: 0 0 50px 0;
     }
     .styrelse-flexbox-wrapper > div {
         width: 300px;
