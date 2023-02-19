@@ -252,3 +252,17 @@ color: inherit;
 .styrelse-flexbox-wrapper > div > h3 {
     margin: 0;
 }
+
+@media only screen and (max-width: 855px), (pointer:none), (pointer:coarse) { 
+    #styrelse-page-title {
+        margin-top: 0.67em;
+    }
+    .styrelse-flexbox-wrapper {
+        width: 100vw;
+        padding: unset;
+    }
+    .styrelse-flexbox-wrapper > div {
+        width: 300px;
+        height: 425px;
+    }
+}
